@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Saeid Iqbal — Digital Business & Technology Professional</title>
+<meta name="description" content="Portfolio and CV of Saeid Iqbal — General Manager, E-commerce & Digital Operations at Marks Avenue. Digital business, marketing, operations and technology." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FDFBF7;
+    --bg-2:#F3EFE6;
+    --surface:#FFFFFF;
+    --surface-2:#F8F5EE;
+    --ink:#131A22;
+    --ink-2:#3D4754;
+    --muted:#6B7684;
+    --line:#E7E0D1;
+    --line-2:#EDE8DC;
+    --teal:#0C5B4F;
+    --teal-light:#E6F2EF;
+    --teal-mid:#12806E;
+    --gold:#B7791F;
+    --gold-light:#FEF3C7;
+    --radius:20px;
+    --radius-sm:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0D1319;
+      --bg-2:#111A22;
+      --surface:#151E28;
+      --surface-2:#18232F;
+      --ink:#F1EDE3;
+      --ink-2:#CBD2DB;
+      --muted:#9AA6B2;
+      --line:#243140;
+      --line-2:#1E2B3A;
+      --teal:#2EC4A6;
+      --teal-light:#12312C;
+      --teal-mid:#2EC4A6;
+      --gold:#E5B84A;
+      --gold-light:#2A2410;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;min-height:44px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  @media(min-width:768px){.wrap{padding:0 32px}}
+
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand-mark{width:40px;height:40px;border-radius:11px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-family:"DM Serif Display",serif;font-size:19px;letter-spacing:.02em;flex-shrink:0}
+  .brand-name{font-weight:700;letter-spacing:-.02em;line-height:1;font-size:17px}
+  .brand-sub{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:3px}
+  .nav-links{display:none;gap:6px;align-items:center}
+  @media(min-width:860px){.nav-links{display:flex}}
+  .nav-links a{font-size:14px;font-weight:500;color:var(--ink-2);padding:10px 14px;border-radius:999px}
+  .nav-links a:hover{background:var(--surface-2);color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:0 20px;font-weight:600;font-size:14px;border:1px solid transparent;transition:.18s;white-space:nowrap}
+  .btn-dark{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .btn-dark:hover{opacity:.92;transform:translateY(-1px)}
+  .btn-outline{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-outline:hover{border-color:var(--ink)}
+  .btn-teal{background:var(--teal);color:#fff;border-color:var(--teal)}
+  @media(prefers-color-scheme:dark){.btn-teal{color:#0D1319}}
+  .btn-teal:hover{filter:brightness(1.05)}
+  .mobile-toggle{display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid var(--line);background:var(--surface);border-radius:999px;font-size:20px}
+  @media(min-width:860px){.mobile-toggle{display:none}}
+  .mobile-menu{display:none;border-top:1px solid var(--line);padding:12px 20px 18px;background:var(--bg)}
+  .mobile-menu.open{display:block}
+  .mobile-menu a{display:flex;min-height:44px;align-items:center;font-weight:600;border-bottom:1px solid var(--line-2)}
+  .mobile-menu a:last-child{border-bottom:none}
+
+  /* HERO */
+  .hero{padding:44px 0 28px}
+  @media(min-width:768px){.hero{padding:64px 0 36px}}
+  .hero-grid{display:grid;gap:28px}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.25fr .85fr;gap:36px;align-items:start}}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--teal-light);color:var(--teal);border:1px solid color-mix(in srgb, var(--teal) 18%, transparent);padding:7px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--teal-mid);box-shadow:0 0 0 4px color-mix(in srgb, var(--teal) 15%, transparent)}
+  h1{font-family:"DM Serif Display",serif;font-weight:400;letter-spacing:-.02em;line-height:.95;margin:18px 0 0;font-size:clamp(52px,9vw,92px)}
+  h1 em{font-style:italic;color:var(--teal)}
+  .hero-title{margin-top:16px;font-size:clamp(18px,2.4vw,22px);line-height:1.35;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+  .hero-desc{margin-top:14px;color:var(--ink-2);font-size:16.5px;line-height:1.7;max-width:620px}
+  .hero-desc strong{color:var(--ink)}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;color:var(--muted);font-size:13.5px;font-weight:500}
+  .hero-meta span{display:inline-flex;align-items:center;gap:6px}
+
+  .profile-card{background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 12px 32px rgba(19,26,34,.06)}
+  .profile-top{background:var(--ink);color:var(--bg);padding:22px}
+  .profile-top-row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+  .avatar{width:72px;height:72px;border-radius:18px;background:#F3EFE6;color:#131A22;display:grid;place-items:center;font-family:"DM Serif Display",serif;font-size:30px;border:2px solid rgba(255,255,255,.25)}
+  @media(prefers-color-scheme:dark){.avatar{background:#EDE8DC}}
+  .avail{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:7px 10px;border-radius:999px;white-space:nowrap}
+  .profile-name{font-family:"DM Serif Display",serif;font-size:28px;line-height:1;margin-top:16px}
+  .profile-role{opacity:.82;font-size:14px;margin-top:6px;line-height:1.4}
+  .profile-body{padding:20px 22px 22px}
+  .kv{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line-2);font-size:14px}
+  .kv:last-of-type{border-bottom:none}
+  .kv dt{color:var(--muted);font-weight:500}
+  .kv dd{margin:0;font-weight:600;text-align:right}
+  .profile-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+  .tag{font-size:12px;font-weight:600;padding:6px 10px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);color:var(--ink-2)}
+  .profile-cta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+  .profile-cta .btn{width:100%}
+
+  /* STRIP */
+  .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2);overflow:hidden;padding:14px 0}
+  .strip-track{display:flex;gap:0;white-space:nowrap;animation:scroll 28s linear infinite;width:max-content}
+  .strip span{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 18px;display:inline-flex;align-items:center;gap:18px}
+  .strip span::after{content:"✦";color:var(--gold);font-size:11px}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.strip-track{animation:none;flex-wrap:wrap;white-space:normal;width:auto}}
+
+  /* SECTIONS */
+  section{padding:52px 0}
+  @media(min-width:768px){section{padding:68px 0}}
+  .section-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:26px}
+  .kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:700}
+  h2{font-family:"DM Serif Display",serif;font-weight:400;letter-spacing:-.02em;line-height:1.05;font-size:clamp(32px,4.5vw,44px);margin:8px 0 0}
+  .section-head p{color:var(--muted);max-width:520px;margin:0;font-size:15px;line-height:1.6}
+
+  /* STATS */
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  @media(min-width:768px){.stats{grid-template-columns:repeat(4,1fr)}}
+  .stat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+  .stat b{font-family:"DM Serif Display",serif;font-weight:400;font-size:32px;line-height:1;display:block;letter-spacing:-.02em}
+  .stat span{font-size:13px;color:var(--muted);font-weight:500;line-height:1.4;display:block;margin-top:6px}
+
+  /* ABOUT */
+  .about-grid{display:grid;gap:20px}
+  @media(min-width:900px){.about-grid{grid-template-columns:1.15fr .85fr}}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .card h3{margin:0 0 10px;font-size:18px;letter-spacing:-.02em}
+  .card p{color:var(--ink-2);margin:0}
+  .card p + p{margin-top:12px}
+  .focus-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+  .focus-list li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line-2)}
+  .focus-list li:last-child{border-bottom:none;padding-bottom:0}
+  .focus-list li:first-child{padding-top:0}
+  .num{width:32px;height:32px;border-radius:999px;background:var(--teal-light);color:var(--teal);display:grid;place-items:center;font-weight:700;font-size:13px;flex-shrink:0;margin-top:2px}
+  .focus-list strong{display:block;font-size:15px}
+  .focus-list span{font-size:14px;color:var(--muted);line-height:1.5;display:block;margin-top:2px}
+
+  /* TIMELINE */
+  .timeline{display:grid;gap:14px}
+  .job{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;gap:16px}
+  @media(min-width:768px){.job{grid-template-columns:210px 1fr;gap:24px;padding:26px}}
+  .job-date{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;line-height:1.6}
+  .job-date strong{display:block;color:var(--ink);font-family:"DM Sans",sans-serif;font-size:13px;letter-spacing:0;text-transform:none}
+  .badge-current{display:inline-flex;margin-top:8px;background:var(--teal);color:#fff;font-family:"DM Sans",sans-serif;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:999px}
+  @media(prefers-color-scheme:dark){.badge-current{color:#0D1319}}
+  .job h3{margin:0;font-size:20px;letter-spacing:-.02em;line-height:1.2}
+  .job .company{font-weight:600;color:var(--teal);margin-top:4px;font-size:15px}
+  .job p{color:var(--ink-2);margin:10px 0 0;font-size:15px;line-height:1.65}
+  .job ul{margin:12px 0 0;padding-left:18px;color:var(--ink-2);font-size:14.5px;line-height:1.6}
+  .job li::marker{color:var(--teal)}
+  .job-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+
+  /* PROJECTS */
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .filter-btn{border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:0 16px;font-size:13.5px;font-weight:600}
+  .filter-btn.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .projects{display:grid;gap:16px}
+  @media(min-width:768px){.projects{grid-template-columns:repeat(3,1fr)}}
+  .project{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+  .project.hidden{display:none}
+  .project-visual{height:150px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;position:relative;overflow:hidden}
+  .pv-1{background:linear-gradient(135deg,#0C5B4F,#123B33)}
+  .pv-2{background:linear-gradient(135deg,#7A4A12,#2F1E08)}
+  .pv-3{background:linear-gradient(135deg,#1E3A4C,#0F1E2E)}
+  .project-visual small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;opacity:.85}
+  .project-visual strong{font-family:"DM Serif Display",serif;font-weight:400;font-size:26px;line-height:1.05;letter-spacing:-.02em;max-width:240px}
+  .project-body{padding:20px;display:flex;flex-direction:column;flex:1}
+  .project-body h3{margin:0;font-size:18px;letter-spacing:-.02em}
+  .project-body p{color:var(--ink-2);font-size:14.5px;line-height:1.65;margin:8px 0 0;flex:1}
+  .project-meta{margin-top:16px;padding-top:14px;border-top:1px solid var(--line-2);display:grid;gap:6px;font-size:13px}
+  .project-meta div{display:flex;justify-content:space-between;gap:12px}
+  .project-meta dt{color:var(--muted)}
+  .project-meta dd{margin:0;font-weight:600;text-align:right}
+
+  /* SKILLS */
+  .skills-grid{display:grid;gap:14px}
+  @media(min-width:768px){.skills-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.skills-grid{grid-template-columns:repeat(3,1fr)}}
+  .skill-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+  .skill-card h3{margin:0 0 12px;font-size:16px;display:flex;align-items:center;gap:10px}
+  .skill-icon{width:36px;height:36px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);display:grid;place-items:center;font-size:17px;flex-shrink:0}
+  .skill-card ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
+  .skill-card li{font-size:13px;font-weight:500;background:var(--bg-2);border:1px solid var(--line-2);padding:6px 10px;border-radius:999px;color:var(--ink-2)}
+
+  /* CV BOX */
+  .cv-box{background:var(--ink);color:var(--bg);border-radius:26px;padding:28px;display:grid;gap:22px;overflow:hidden;position:relative}
+  @media(min-width:860px){.cv-box{grid-template-columns:1.2fr .8fr;padding:36px;align-items:center}}
+  .cv-box h2{color:var(--bg);margin-top:6px}
+  .cv-box .kicker{color:#8FE3D0}
+  @media(prefers-color-scheme:dark){.cv-box .kicker{color:var(--teal)}}
+  .cv-box p{color:color-mix(in srgb, var(--bg) 78%, transparent);margin:12px 0 0;line-height:1.65;max-width:560px}
+  .cv-list{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px}
+  @media(prefers-color-scheme:dark){.cv-list{background:rgba(0,0,0,.18)}}
+  .cv-list div{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:14px}
+  .cv-list div:last-child{border-bottom:none}
+  .cv-list span{opacity:.7}
+  .cv-list strong{font-weight:600;text-align:right}
+
+  /* CONTACT */
+  .contact-grid{display:grid;gap:16px}
+  @media(min-width:860px){.contact-grid{grid-template-columns:1fr 1fr}}
+  .contact-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px}
+  .contact-row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line-2);align-items:flex-start}
+  .contact-row:last-child{border-bottom:none}
+  .contact-row-icon{width:40px;height:40px;border-radius:12px;background:var(--teal-light);color:var(--teal);display:grid;place-items:center;flex-shrink:0;font-size:18px}
+  .contact-row strong{display:block;font-size:14px}
+  .contact-row span{font-size:14px;color:var(--muted);display:block;margin-top:2px;line-height:1.5}
+  .form{display:grid;gap:12px}
+  .form label{font-size:13px;font-weight:600;display:grid;gap:6px}
+  .form input,.form textarea{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:12px;padding:12px 14px;font:inherit;font-size:15px;min-height:48px}
+  .form textarea{min-height:110px;resize:vertical}
+  .form-note{font-size:12.5px;color:var(--muted);line-height:1.5}
+
+  footer{border-top:1px solid var(--line);padding:28px 0 36px;color:var(--muted);font-size:13.5px}
+  .footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center}
+  .reveal{opacity:1;transform:none}
+  @media(max-width:640px){#downloadTop{display:none}}
+  h1 em{padding-left:.08em;margin-left:-.04em}
+  .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:12px 16px;border-radius:999px;font-size:14px;font-weight:600;opacity:0;pointer-events:none;transition:.25s;z-index:80;box-shadow:0 12px 30px rgba(0,0,0,.18);max-width:calc(100vw - 32px);text-align:center}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand" aria-label="Saeid Iqbal home">
+      <span class="brand-mark">S</span>
+      <span><span class="brand-name">Saeid Iqbal</span><span class="brand-sub" style="display:block">saeidiqbal.com</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button class="btn btn-dark" id="downloadTop" type="button">↓ Download CV</button>
+      <button class="mobile-toggle" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects & Ventures</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> General Manager — Marks Avenue</span>
+        <h1>Saeid<br><em>Iqbal</em></h1>
+        <p class="hero-title">Digital Business & Technology Professional building e-commerce that actually sells.</p>
+        <p class="hero-desc">I lead <strong>E-commerce & Digital Operations at Marks Avenue</strong> — from storefront and campaigns to fulfilment, payments and growth. Before that I worked across marketing, business operations and content, and I run ventures of my own in agriculture and consumer goods. This site is my portfolio and CV in one place.</p>
+        <div class="hero-actions">
+          <a class="btn btn-teal" href="#experience" style="min-height:48px;padding:0 22px">View experience →</a>
+          <a class="btn btn-outline" href="#projects" style="min-height:48px;padding:0 22px">See projects</a>
+          <button class="btn btn-outline" id="copyDomain" type="button" style="min-height:48px">Copy saeidiqbal.com</button>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Dhaka, Bangladesh</span>
+          <span>🏠 From Meherpur (Islamnagar)</span>
+          <span>🌐 saeidiqbal.com</span>
+        </div>
+      </div>
+
+      <aside class="profile-card" aria-label="Profile summary">
+        <div class="profile-top">
+          <div class="profile-top-row">
+            <div class="avatar">SI</div>
+            <span class="avail">● Current role</span>
+          </div>
+          <div class="profile-name">Saeid Iqbal</div>
+          <div class="profile-role">General Manager, E-commerce &amp;<br>Digital Operations</div>
+        </div>
+        <div class="profile-body">
+          <dl style="margin:0">
+            <div class="kv"><dt>Company</dt><dd>Marks Avenue</dd></div>
+            <div class="kv"><dt>Website</dt><dd>marksavenue.com</dd></div>
+            <div class="kv"><dt>Since</dt><dd>March 2026</dd></div>
+            <div class="kv"><dt>Focus</dt><dd>E-commerce · Marketing · Ops</dd></div>
+            <div class="kv"><dt>Also building</dt><dd>Baraka · My Choice Tissue</dd></div>
+          </dl>
+          <div class="profile-tags">
+            <span class="tag">E-commerce Strategy</span>
+            <span class="tag">Digital Marketing</span>
+            <span class="tag">Operations</span>
+            <span class="tag">Team Leadership</span>
+          </div>
+          <div class="profile-cta">
+            <a href="#contact" class="btn btn-dark">Get in touch</a>
+            <button class="btn btn-outline" id="downloadCard" type="button">Download CV</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track" id="stripTrack">
+      <span>E-commerce Operations</span><span>Digital Marketing</span><span>SSLCommerz & Payments</span><span>SEO & Speed</span><span>Inventory & ERP Thinking</span><span>Content & Video</span><span>Business Development</span><span>Cybersecurity Direction</span>
+    </div>
+  </div>
+
+  <!-- STATS + ABOUT -->
+  <section id="about" style="padding-top:36px">
+    <div class="wrap">
+      <div class="stats reveal">
+        <div class="stat"><b>4</b><span>Professional roles across operations, marketing & content</span></div>
+        <div class="stat"><b>GM</b><span>General Manager level — leading e-commerce at Marks Avenue</span></div>
+        <div class="stat"><b>3</b><span>Ventures & projects: Marks Avenue, Baraka, My Choice Tissue</span></div>
+        <div class="stat"><b>2022 →</b><span>Career span from video editing to digital business leadership</span></div>
+      </div>
+
+      <div style="height:22px"></div>
+
+      <div class="section-head reveal">
+        <div><div class="kicker">About me</div><h2>Operator first,<br>marketer by craft.</h2></div>
+        <p>I’m most useful where business, technology and customers meet — setting up the store, the system behind it, and the marketing that brings people to it.</p>
+      </div>
+
+      <div class="about-grid">
+        <article class="card reveal">
+          <h3>A short story</h3>
+          <p>I started in content — editing video at Mangrove Institute of Science and Technology in 2022–23 — which taught me how attention works. I moved into business operations as Executive Officer at FSN IT Solution, then into marketing leadership at Believer, and now I run e-commerce and digital operations as General Manager at Marks Avenue.</p>
+          <p>Alongside my day job I build things myself: an agriculture project with Baraka Foundation (vegetable farming and sales through autumn 2026) and My Choice Tissue, a consumer tissue business with dealer, trade and retail pricing. Building my own ventures keeps my advice practical — I care about stock, margins, delivery and repeat customers, not just clicks.</p>
+          <p>My current direction is deeper into technology and cybersecurity alongside e-commerce — how stores stay fast, secure and trustworthy as they scale.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>What I focus on</h3>
+          <ul class="focus-list">
+            <li><span class="num">1</span><div><strong>E-commerce that converts</strong><span>Clear product pages, variant pricing, live stock, and checkout with local payments like SSLCommerz.</span></div></li>
+            <li><span class="num">2</span><div><strong>Systems behind the store</strong><span>Inventory that drops on purchase, customer accounts, shipping & hub logic, ERP thinking, analytics and CDN speed.</span></div></li>
+            <li><span class="num">3</span><div><strong>Growth with discipline</strong><span>SEO, landing pages, affiliate links, bulk discounts and campaigns tied to real sales — not vanity metrics.</span></div></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="kicker">CV — Experience</div><h2>Work history</h2></div>
+        <p>From content to the general manager’s desk in four steps. Dates and titles are as on my CV.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="job reveal">
+          <div class="job-date">Mar 2026 — Present<strong>Dhaka, Bangladesh</strong><span class="badge-current">Current role</span></div>
+          <div>
+            <h3>General Manager, E-commerce & Digital Operations</h3>
+            <div class="company">Marks Avenue — marksavenue.com</div>
+            <p>Leading the e-commerce and digital side of the business end-to-end: online store performance, digital operations, and the systems that connect product, payment, stock and delivery.</p>
+            <ul>
+              <li>Own day-to-day e-commerce operations and digital growth priorities</li>
+              <li>Shape the online experience — product presentation, offers, and customer journey</li>
+              <li>Coordinate marketing, operations and technology decisions for the store</li>
+            </ul>
+            <div class="job-tags"><span class="tag">E-commerce Leadership</span><span class="tag">Digital Operations</span><span class="tag">Strategy</span><span class="tag">Team Management</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-date">Sep 2025 — Feb 2026<strong>6 months</strong></div>
+          <div>
+            <h3>Marketing Manager & Specialist</h3>
+            <div class="company">Believer</div>
+            <p>Marketing management and hands-on specialist work — planning campaigns, creating and overseeing content, and turning marketing activity into measurable business results.</p>
+            <ul>
+              <li>Planned and executed marketing campaigns across digital channels</li>
+              <li>Balanced strategy with execution: briefs, content, and performance follow-up</li>
+            </ul>
+            <div class="job-tags"><span class="tag">Marketing Strategy</span><span class="tag">Campaigns</span><span class="tag">Content</span><span class="tag">Brand</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-date">Nov 2024 — Aug 2025<strong>10 months</strong></div>
+          <div>
+            <h3>Executive Officer</h3>
+            <div class="company">FSN IT Solution</div>
+            <p>Business operations role in a technology company — coordination, execution and client-facing work that built my grounding in how IT services and digital businesses actually run.</p>
+            <ul>
+              <li>Supported day-to-day operations and execution across the business</li>
+              <li>Built practical understanding of IT services, clients and delivery</li>
+            </ul>
+            <div class="job-tags"><span class="tag">Operations</span><span class="tag">IT Services</span><span class="tag">Coordination</span><span class="tag">Administration</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-date">2022 — 2023<strong>Early career</strong></div>
+          <div>
+            <h3>Video Editor</h3>
+            <div class="company">Mangrove Institute of Science and Technology</div>
+            <p>Where it started. Editing video content — pacing, storytelling and visual craft. The foundation for everything I later did in marketing and content-led commerce.</p>
+            <ul>
+              <li>Edited and produced video content to brief and deadline</li>
+              <li>Developed an eye for story, hook and audience attention</li>
+            </ul>
+            <div class="job-tags"><span class="tag">Video Editing</span><span class="tag">Storytelling</span><span class="tag">Content Production</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="kicker">Portfolio</div><h2>Projects & ventures</h2></div>
+        <p>Work I lead at Marks Avenue, plus ventures I’ve built myself. Filter by type to explore.</p>
+      </div>
+
+      <div class="filters reveal" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all" type="button">All projects</button>
+        <button class="filter-btn" data-filter="ecommerce" type="button">E-commerce</button>
+        <button class="filter-btn" data-filter="venture" type="button">My ventures</button>
+      </div>
+
+      <div class="projects">
+        <article class="project reveal" data-cat="ecommerce">
+          <div class="project-visual pv-1"><small>E-commerce · Leadership</small><strong>Marks Avenue Online Store</strong></div>
+          <div class="project-body">
+            <h3>Marks Avenue — E-commerce & Digital</h3>
+            <p>As GM, I lead the digital business for marksavenue.com: store operations, product experience, campaigns, and the roadmap for a faster, more complete online shop — analytics, local payments, stock accuracy, variant pricing, customer accounts and delivery logic.</p>
+            <dl class="project-meta">
+              <div><dt>Role</dt><dd>General Manager</dd></div>
+              <div><dt>Site</dt><dd>marksavenue.com</dd></div>
+              <div><dt>Focus</dt><dd>Growth + Operations</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="venture">
+          <div class="project-visual pv-2"><small>Agriculture · Venture</small><strong>Baraka Foundation Farming Project</strong></div>
+          <div class="project-body">
+            <h3>Baraka Foundation — Agriculture</h3>
+            <p>A hands-on farming venture: land leased in August 2026 and crops grown for sale through October–November 2026, including cucumber (শসা) and bitter gourd (করলা). A lesson in real-world operations — costs, seasons, yield and selling.</p>
+            <dl class="project-meta">
+              <div><dt>Total investment</dt><dd>৳100,000 BDT</dd></div>
+              <div><dt>Land lease</dt><dd>৳40,000 BDT · Aug 2026</dd></div>
+              <div><dt>Crops</dt><dd>Cucumber · Bitter gourd</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="venture ecommerce">
+          <div class="project-visual pv-3"><small>Consumer Goods · Venture</small><strong>My Choice Tissue</strong></div>
+          <div class="project-body">
+            <h3>My Choice Tissue — Product Business</h3>
+            <p>A tissue products business with structured pricing for dealers, trade and retail (MRP). Range includes hand towels, restaurant tissue, napkins and white tissue rolls — with shop-level sales and cost tracking.</p>
+            <dl class="project-meta">
+              <div><dt>Pricing tiers</dt><dd>Dealer · Trade · MRP</dd></div>
+              <div><dt>Range</dt><dd>4 product lines</dd></div>
+              <div><dt>Model</dt><dd>Distribution + Retail</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+
+      <div class="card reveal" style="margin-top:16px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">
+        <div style="max-width:680px">
+          <h3 style="margin-bottom:6px">My blueprint for a serious online store</h3>
+          <p style="font-size:14.5px">Visitor analytics · SSLCommerz payments · StarTech-style detailed product pages · stock that reduces on purchase · variant & price linking · customer accounts · ERP integration · shipment, hub & delivery management · SEO, speed & CDN · landing pages · affiliate links · bulk discounts · zone-based shipping costs.</p>
+        </div>
+        <span class="tag" style="font-size:13px;padding:9px 13px">From my own requirements doc</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="kicker">Capabilities</div><h2>Skills & expertise</h2></div>
+        <p>A practical mix: run the store, market the product, manage the operation, and understand the technology underneath.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><h3><span class="skill-icon">🛒</span> E-commerce</h3><ul><li>Store Operations</li><li>Product Pages & Variants</li><li>Inventory & Stock</li><li>SSLCommerz / Payments</li><li>Shipping & Delivery</li><li>Customer Accounts</li></ul></div>
+        <div class="skill-card reveal"><h3><span class="skill-icon">📣</span> Marketing</h3><ul><li>Digital Marketing</li><li>Campaign Planning</li><li>SEO</li><li>Landing Pages</li><li>Affiliate & Offers</li><li>Social Media</li></ul></div>
+        <div class="skill-card reveal"><h3><span class="skill-icon">⚙️</span> Business & Ops</h3><ul><li>General Management</li><li>Team Leadership</li><li>Pricing — Dealer / Trade / MRP</li><li>Distribution</li><li>Cost Tracking</li><li>Vendor Coordination</li></ul></div>
+        <div class="skill-card reveal"><h3><span class="skill-icon">🎬</span> Content</h3><ul><li>Video Editing</li><li>Content Production</li><li>Storytelling</li><li>Drone & Mobile Photography*</li><li>Product Presentation</li></ul></div>
+        <div class="skill-card reveal"><h3><span class="skill-icon">💻</span> Technology</h3><ul><li>Website Management</li><li>Analytics</li><li>Speed & CDN</li><li>ERP Concepts</li><li>cPanel / Hosting Basics</li><li>Domains & DNS</li></ul></div>
+        <div class="skill-card reveal"><h3><span class="skill-icon">🛡️</span> Growing Into</h3><ul><li>Cybersecurity Fundamentals</li><li>Security Awareness</li><li>Risk Thinking</li><li>Secure E-commerce</li></ul></div>
+      </div>
+      <p style="color:var(--muted);font-size:12.5px;margin-top:14px">* Photography from extensive travel across Bangladesh — Dhaka, Cox’s Bazar, Barishal, Chittagong, Sonargaon and beyond — shot on mobile and drone.</p>
+    </div>
+  </section>
+
+  <!-- CV DOWNLOAD -->
+  <section>
+    <div class="wrap">
+      <div class="cv-box reveal">
+        <div>
+          <div class="kicker">CV — At a glance</div>
+          <h2>Saeid Iqbal, in one page.</h2>
+          <p>Download a clean text version of my CV with my full work history, ventures and skills — ready to share with employers, clients and collaborators.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
+            <button class="btn" id="downloadMain" type="button" style="background:#fff;color:#131A22;min-height:48px;padding:0 22px">↓ Download CV (.txt)</button>
+            <a href="#contact" class="btn" style="border-color:rgba(255,255,255,.35);color:inherit;min-height:48px;padding:0 22px">Contact me →</a>
+          </div>
+        </div>
+        <div class="cv-list" aria-label="CV summary">
+          <div><span>Current</span><strong>GM, Marks Avenue</strong></div>
+          <div><span>Previous</span><strong>Believer · FSN IT · Mangrove</strong></div>
+          <div><span>Domain</span><strong>saeidiqbal.com</strong></div>
+          <div><span>Base</span><strong>Dhaka, Bangladesh</strong></div>
+          <div><span>Ventures</span><strong>Baraka · My Choice Tissue</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="kicker">Contact</div><h2>Let’s work together</h2></div>
+        <p>For roles, consulting, e-commerce projects or collaborations — send a message and I’ll get back to you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="contact-row"><span class="contact-row-icon">🌐</span><div><strong>This website</strong><span>saeidiqbal.com — my personal portfolio & CV site. You’re on it now.</span></div></div>
+          <div class="contact-row"><span class="contact-row-icon">💼</span><div><strong>Current workplace</strong><span>Marks Avenue — marksavenue.com<br>General Manager, E-commerce & Digital Operations</span></div></div>
+          <div class="contact-row"><span class="contact-row-icon">📍</span><div><strong>Location</strong><span>Dhaka, Bangladesh<br>Originally from Meherpur (Islamnagar)</span></div></div>
+          <div class="contact-row"><span class="contact-row-icon">🤝</span><div><strong>Open to</strong><span>E-commerce leadership · Digital business consulting · Brand & growth projects · Partnerships for Baraka & My Choice Tissue</span></div></div>
+        </div>
+
+        <div class="contact-card reveal">
+          <form class="form" id="contactForm">
+            <label>Your name <input type="text" id="fName" placeholder="e.g. Rahim Uddin" autocomplete="name" required></label>
+            <label>Your email or phone <input type="text" id="fContact" placeholder="So I can reply to you" required></label>
+            <label>Message <textarea id="fMsg" placeholder="Hi Saeid, I’d like to talk about…" required></textarea></label>
+            <button class="btn btn-teal" type="submit" style="min-height:50px">Prepare message to copy →</button>
+            <p class="form-note">This prepares your message as text you can copy and send by email or messenger — nothing is stored on this page. Tap “Copy message” after preparing.</p>
+            <button class="btn btn-outline" type="button" id="copyMsgBtn" style="display:none">Copy prepared message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© 2026 Saeid Iqbal · saeidiqbal.com</span>
+    <span>Digital Business & Technology Professional — Dhaka, Bangladesh</span>
+    <a href="#top" style="font-weight:600;color:var(--ink);min-height:36px;display:inline-flex;align-items:center">Back to top ↑</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  // Duplicate strip content for seamless loop
+  var track = document.getElementById('stripTrack');
+  if(track){ track.innerHTML += track.innerHTML; }
+
+  // Mobile menu
+  var menuBtn = document.getElementById('menuBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', function(){
+    var open = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.textContent = open ? '✕' : '☰';
+  });
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ mobileMenu.classList.remove('open'); menuBtn.textContent='☰'; });
+  });
+
+  // Toast
+  var toast = document.getElementById('toast');
+  var toastTimer;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 3200);
+  }
+
+  // Copy helper
+  function copyText(text, okMsg){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ showToast(okMsg); }).catch(function(){ fallbackCopy(text, okMsg); });
+    } else { fallbackCopy(text, okMsg); }
+  }
+  function fallbackCopy(text, okMsg){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); showToast(okMsg); }catch(e){ showToast('Copy failed — please copy manually: ' + text); }
+    document.body.removeChild(ta);
+  }
+
+  document.getElementById('copyDomain').addEventListener('click', function(){
+    copyText('saeidiqbal.com', 'Copied: saeidiqbal.com');
+  });
+
+  // CV download as text file
+  var cvText = [
+    'SAEID IQBAL',
+    'Digital Business & Technology Professional',
+    'Website: saeidiqbal.com  |  Location: Dhaka, Bangladesh (from Meherpur)',
+    '',
+    'PROFILE',
+    'General Manager, E-commerce & Digital Operations at Marks Avenue.',
+    'Experience across e-commerce, digital marketing, business operations and content.',
+    'Founder/operator of ventures in agriculture (Baraka Foundation) and consumer goods (My Choice Tissue).',
+    '',
+    'EXPERIENCE',
+    'Mar 2026 - Present  General Manager, E-commerce & Digital Operations - Marks Avenue (marksavenue.com)',
+    '  Leading e-commerce and digital operations end-to-end: store performance, product experience, campaigns and growth systems.',
+    '',
+    'Sep 2025 - Feb 2026  Marketing Manager & Specialist - Believer',
+    '  Marketing planning and execution across digital channels; campaigns, content and performance.',
+    '',
+    'Nov 2024 - Aug 2025  Executive Officer - FSN IT Solution',
+    '  Business operations and coordination in a technology company.',
+    '',
+    '2022 - 2023  Video Editor - Mangrove Institute of Science and Technology',
+    '  Video editing and content production; storytelling and visual craft.',
+    '',
+    'PROJECTS & VENTURES',
+    '- Marks Avenue Online Store: e-commerce leadership, growth and operations roadmap (analytics, SSLCommerz, stock, variants, accounts, ERP, shipping, SEO, CDN).',
+    '- Baraka Foundation Agriculture Project: BDT 100,000 invested; land lease BDT 40,000 (Aug 2026); cucumber and bitter gourd sales Oct-Nov 2026.',
+    '- My Choice Tissue: hand towel, restaurant tissue, napkin, white tissue roll; dealer / trade / MRP pricing.',
+    '',
+    'SKILLS',
+    'E-commerce Operations, Digital Marketing, SEO, Campaigns, Pricing & Distribution,',
+    'Inventory & Shipping, Website Management, Analytics, Video Editing, Content, Team Leadership,',
+    'Growing into Cybersecurity.',
+    '',
+    'Generated from saeidiqbal.com'
+  ].join('\n');
+
+  function downloadCV(){
+    var blob = new Blob([cvText], {type:'text/plain;charset=utf-8'});
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = 'Saeid-Iqbal-CV.txt';
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 800);
+    showToast('CV downloaded — Saeid-Iqbal-CV.txt');
+  }
+  ['downloadTop','downloadCard','downloadMain'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.addEventListener('click', downloadCV);
+  });
+
+  // Project filters
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var projects = document.querySelectorAll('.project');
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.getAttribute('data-filter');
+      projects.forEach(function(p){
+        var cats = (p.getAttribute('data-cat')||'').split(' ');
+        var show = (f==='all' || cats.indexOf(f)!==-1);
+        p.classList.toggle('hidden', !show);
+      });
+    });
+  });
+
+  // Contact form -> prepare copyable message
+  var prepared = '';
+  var copyBtn = document.getElementById('copyMsgBtn');
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('fName').value.trim();
+    var contact = document.getElementById('fContact').value.trim();
+    var msg = document.getElementById('fMsg').value.trim();
+    if(!name || !contact || !msg){ showToast('Please fill in all three fields.'); return; }
+    prepared = 'Message for Saeid Iqbal (via saeidiqbal.com)\n\nName: ' + name + '\nContact: ' + contact + '\n\n' + msg;
+    copyBtn.style.display = 'inline-flex';
+    showToast('Message prepared — tap “Copy prepared message” to copy it.');
+    copyText(prepared, 'Message copied — paste it into email or Messenger to send.');
+  });
+  copyBtn.addEventListener('click', function(){
+    if(prepared) copyText(prepared, 'Message copied — paste it into email or Messenger to send.');
+  });
+
+  // Reveal on scroll
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); } });
+    }, {threshold:.08});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('visible'); });
+  }
+})();
+</script>
+</body>
+</html>
