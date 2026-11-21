@@ -62,7 +62,7 @@
   .nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
   .brand{display:flex;align-items:center;gap:12px}
-  .brand-mark{width:40px;height:40px;border-radius:11px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-family:"DM Serif Display",serif;font-size:19px;letter-spacing:.02em;flex-shrink:0}
+  .brand-mark{width:40px;height:40px;border-radius:11px;background:var(--ink);object-fit:cover;flex-shrink:0}
   .brand-name{font-weight:700;letter-spacing:-.02em;line-height:1;font-size:17px}
   .brand-sub{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:3px}
   .nav-links{display:none;gap:6px;align-items:center}
@@ -103,7 +103,7 @@
   .profile-card{background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 12px 32px rgba(19,26,34,.06)}
   .profile-top{background:var(--ink);color:var(--bg);padding:22px}
   .profile-top-row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
-  .avatar{width:72px;height:72px;border-radius:18px;background:#F3EFE6;color:#131A22;display:grid;place-items:center;font-family:"DM Serif Display",serif;font-size:30px;border:2px solid rgba(255,255,255,.25)}
+  .avatar{width:72px;height:72px;border-radius:18px;object-fit:cover;border:2px solid rgba(255,255,255,.25)}
   @media(prefers-color-scheme:dark){.avatar{background:#EDE8DC}}
   .avail{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:7px 10px;border-radius:999px;white-space:nowrap}
   .profile-name{font-family:"DM Serif Display",serif;font-size:28px;line-height:1;margin-top:16px}
@@ -246,7 +246,7 @@
 <header class="nav">
   <div class="wrap nav-inner">
     <a href="#top" class="brand" aria-label="Saeid Iqbal home">
-      <span class="brand-mark">S</span>
+      <img class="brand-mark" src="/favicon-512.png" alt="Saeid Iqbal" />
       <span><span class="brand-name">Saeid Iqbal</span><span class="brand-sub" style="display:block">saeidiqbal.com</span></span>
     </a>
     <nav class="nav-links" aria-label="Primary">
@@ -294,7 +294,7 @@
       <aside class="profile-card" aria-label="Profile summary">
         <div class="profile-top">
           <div class="profile-top-row">
-            <div class="avatar">SI</div>
+            <img class="avatar" src="/favicon-512.png" alt="Photo of Saeid Iqbal" />
             <span class="avail">● Current role</span>
           </div>
           <div class="profile-name">Saeid Iqbal</div>
